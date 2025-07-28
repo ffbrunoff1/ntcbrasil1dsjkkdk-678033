@@ -1,13 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
 export default function Footer() {
   const navLinks = [
     { name: 'Sobre Nós', href: '#about' },
     { name: 'Nossa Abordagem', href: '#services' },
     { name: 'Contato', href: '#contact' },
   ];
-
   const footerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -16,7 +14,6 @@ export default function Footer() {
       transition: { duration: 0.8, ease: 'easeOut' },
     },
   };
-
   return (
     <motion.footer
       className="bg-text-dark text-text-light"
@@ -36,10 +33,9 @@ export default function Footer() {
               />
             </a>
             <p className="max-w-xs text-gray-400">
-              Construindo o futuro com solidez e inovação.
+              Solucoes em Drenagem com solidez e inovação.
             </p>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold text-primary mb-4">
               Navegação
@@ -57,7 +53,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
           <div>
             <h3 className="text-lg font-semibold text-primary mb-4">
               Fale Conosco
@@ -69,7 +64,6 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500">
           <p>
             &copy; {new Date().getFullYear()} NTC Brasil. Todos os direitos

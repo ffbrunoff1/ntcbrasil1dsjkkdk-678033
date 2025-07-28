@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
-
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -13,7 +12,6 @@ export default function Hero() {
       },
     },
   };
-
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -25,7 +23,6 @@ export default function Hero() {
       },
     },
   };
-
   return (
     <section
       id="home"
@@ -33,7 +30,6 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-black opacity-20"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary to-accent opacity-80"></div>
-
       <motion.div
         className="relative z-10 container mx-auto px-6 text-center"
         variants={containerVariants}
@@ -44,17 +40,15 @@ export default function Hero() {
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
           variants={itemVariants}
         >
-          Construindo o futuro com <br className="hidden md:block" />
+          Solucoes em Drenagem com <br className="hidden md:block" />
           <span className="text-white drop-shadow-lg">solidez e inovação.</span>
         </motion.h1>
-
         <motion.p
           className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-200"
           variants={itemVariants}
         >
           NTC Brasil: uma fundação robusta para suas conquistas.
         </motion.p>
-
         <motion.div
           className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4"
           variants={itemVariants}
@@ -73,7 +67,6 @@ export default function Hero() {
           </a>
         </motion.div>
       </motion.div>
-
       <motion.a
         href="#about"
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
